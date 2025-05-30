@@ -1,0 +1,14 @@
+res://Scenes/PowerUp/PowerUp.tscn
+res://Scenes/Projectile/Projectile.tscn
+res://Scenes/Main/Main.tscn
+res://Scenes/UiButton/UiButton.tscn
+res://Scenes/Explosion/Explosion.tscn
+res://Scenes/Level/Level.tscn
+res://Scenes/PowerUp/PowerUp.gd
+res://Globals/SignalHub.gd
+res://Scenes/ObjectMaker/ObjectMaker.gd
+res://Scenes/Level/Level.gd
+res://Scenes/Bullet/BulletBase.tscn
+res://Scenes/Bullet/BulletPlayer.tscn
+res://Scenes/Bullet/EnemyBullet.tscn
+res://Scenes/Bullet/BulletBomb.tscn

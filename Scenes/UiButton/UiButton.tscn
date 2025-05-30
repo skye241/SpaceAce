@@ -1,0 +1,36 @@
+[gd_scene load_steps=6 format=3 uid="uid://gd1k088ksqwh"]
+
+[ext_resource type="Texture2D" uid="uid://cr11dcg5odiqs" path="res://assets/ui/blue_button00.png" id="1_d3o11"]
+[ext_resource type="Texture2D" uid="uid://ry1ie7yd0icd" path="res://assets/ui/green_button00.png" id="2_gqr4m"]
+[ext_resource type="FontFile" uid="uid://bfhl7psyde182" path="res://assets/fonts/gemunu-libre-v8-latin-700.ttf" id="3_gqr4m"]
+[ext_resource type="Script" uid="uid://r8is6maaitl2" path="res://Scenes/UiButton/UiButton.gd" id="3_i3cps"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_i3cps"]
+font = ExtResource("3_gqr4m")
+font_size = 32
+outline_size = 2
+outline_color = Color(0.280972, 0.359908, 0.962743, 1)
+
+[node name="UiButton" type="TextureButton"]
+anchors_preset = -1
+anchor_right = 0.297
+anchor_bottom = 0.102
+offset_right = -0.0800171
+offset_bottom = 0.0399971
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("1_d3o11")
+texture_hover = ExtResource("2_gqr4m")
+script = ExtResource("3_i3cps")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Play"
+label_settings = SubResource("LabelSettings_i3cps")
+horizontal_alignment = 1
+vertical_alignment = 1
