@@ -15,3 +15,6 @@ script = ExtResource("1_0sawj")
 [node name="OutOfTime" parent="." instance=ExtResource("2_f0bxn")]
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
