@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://bkl44u351pptp"]
 
 [ext_resource type="PackedScene" uid="uid://7ttsum48jaea" path="res://Scenes/Enemies/EnemyBase.tscn" id="1_otrf3"]
-[ext_resource type="Script" uid="uid://blya5d42ve0sn" path="res://EnemyShip.gd" id="2_i25q0"]
+[ext_resource type="Script" uid="uid://blya5d42ve0sn" path="res://Scenes/Enemies/EnemyShip.gd" id="2_i25q0"]
 [ext_resource type="AudioStream" uid="uid://bua53yqo6hear" path="res://Resources/new_audio_stream_randomizer.tres" id="3_i25q0"]
 
 [node name="EnemyShip" instance=ExtResource("1_otrf3")]
