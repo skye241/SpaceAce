@@ -1,1 +1,16 @@
-res://Scenes/Player/Player.tscn
+res://Scenes/GameUI/GameOverUi.tscn
+res://Scenes/UiButton/Title322.tres
+res://Resources/title_64.tres
+res://Resources/new_audio_stream_randomizer.tres
+res://Scenes/GameUI/GameOverUi.gd
+res://Scenes/GameUI/GameUi.tscn
+res://Scenes/Enemies/EnemyShip.tscn
+res://Scenes/Enemies/EnemyZipper.tscn
+res://Scenes/Enemies/EnemyBomber.tscn
+res://Scenes/Enemies/EnemyBio.tscn
+res://Scenes/Level/Level.tscn
+res://Scenes/Enemies/Saucer.tscn
+res://Scenes/HealthBar/HealthBar.tscn
+res://Scenes/Main/Main.tscn
+res://Scenes/Player/Player.gd
+res://Scenes/GameUI/GameUi.gd

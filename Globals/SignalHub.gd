@@ -1,12 +1,16 @@
 extends Node
 
-
+signal on_player_die
 signal on_player_hit(v: int)
 signal on_score_updated(v: int)
 signal on_create_explosion(pos: Vector2, anim: String)
 signal on_create_powerup(pos: Vector2, type: PowerUp.PowerUpType)
 signal on_create_random_powerup(pos: Vector2)
 signal on_create_bullet(pos: Vector2, dir: Vector2, type: Bullet.BulletType, speed: float)
+signal on_player_health_bonus(v: int)
+signal on_create_homing_missile(pos: Vector2)
+
+
 
 func emit_on_player_hit(v: int) -> void:
 	on_player_hit.emit(v)
@@ -27,3 +31,12 @@ func emit_on_create_random_powerup(pos: Vector2) -> void:
 
 func emit_on_create_bullet(pos: Vector2, dir: Vector2, type: Bullet.BulletType, speed: float) -> void:
 	on_create_bullet.emit(pos, dir, type, speed)
+
+func emit_on_player_health_bonus(v: int)-> void:
+	on_player_health_bonus.emit(v)
+
+func emit_on_create_homing_missile(pos: Vector2) -> void:
+	on_create_homing_missile.emit(pos)
+
+func emit_on_player_die() -> void:
+	on_player_die.emit()

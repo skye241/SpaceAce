@@ -1,20 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://2ajn46ojd0r2"]
+[gd_scene load_steps=7 format=3 uid="uid://2ajn46ojd0r2"]
 
 [ext_resource type="Texture2D" uid="uid://b2opofve3y3we" path="res://assets/backgrounds/GalaxyUno.png" id="1_i3fi7"]
 [ext_resource type="Script" uid="uid://cmw50pbfsw662" path="res://Scenes/Main/Main.gd" id="1_o8wgc"]
 [ext_resource type="PackedScene" uid="uid://gd1k088ksqwh" path="res://Scenes/UiButton/UiButton.tscn" id="2_i3fi7"]
 [ext_resource type="PackedScene" uid="uid://sqr4aejsdpl5" path="res://Scenes/Sun/Sun.tscn" id="2_o8wgc"]
-[ext_resource type="FontFile" uid="uid://b33msg5mojbvg" path="res://assets/fonts/LuckiestGuy-Regular.ttf" id="3_w20t6"]
+[ext_resource type="LabelSettings" uid="uid://cu74rrqu72yqv" path="res://Resources/title_64.tres" id="3_w20t6"]
 [ext_resource type="AudioStream" uid="uid://ch61rkn7lovsl" path="res://assets/sounds/loops/TitleScreen.mp3" id="4_aw1lf"]
-
-[sub_resource type="LabelSettings" id="LabelSettings_aw1lf"]
-font = ExtResource("3_w20t6")
-font_size = 64
-outline_size = 4
-outline_color = Color(0.926457, 0.199721, 0.213961, 1)
-shadow_size = 10
-shadow_color = Color(0.807843, 0.180392, 0.215686, 0.862745)
-shadow_offset = Vector2(2, 2)
 
 [node name="Main" type="Control"]
 process_mode = 3
@@ -51,7 +42,7 @@ theme_override_constants/margin_bottom = 24
 layout_mode = 2
 size_flags_horizontal = 0
 text = "SPACE ACE"
-label_settings = SubResource("LabelSettings_aw1lf")
+label_settings = ExtResource("3_w20t6")
 
 [node name="VB" type="VBoxContainer" parent="MC"]
 layout_mode = 2

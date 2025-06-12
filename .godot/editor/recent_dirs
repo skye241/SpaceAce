@@ -1,3 +1,8 @@
+res://Resources
+res://Scenes/GameUI
+res://Scenes/Enemies
+res://assets/ships
+res://Scenes/UiButton
 res://Scenes/HealthBar
 res://Scenes/Shield
 res://Scenes/HomingMissile
@@ -8,4 +13,3 @@ res://Scenes/PowerUp
 res://assets/misc
 res://Scenes/Explosion
 res://Scenes/Level
-res://Scenes/UiButton

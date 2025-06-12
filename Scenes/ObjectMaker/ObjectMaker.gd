@@ -4,6 +4,7 @@ extends Node2D
 const ADD_OBJECT: String = "add_object"
 const EXPLOSION = preload("res://Scenes/Explosion/Explosion.tscn")
 const POWER_UP = preload("res://Scenes/PowerUp/PowerUp.tscn")
+const HOMING_MISSILE = preload("res://Scenes/HomingMissile/HomingMissile.tscn")
 
 const BULLET_SCENES: Dictionary[Bullet.BulletType, PackedScene] = {
 	Bullet.BulletType.PlayerBullet : preload("res://Scenes/Bullet/BulletPlayer.tscn"),
@@ -17,7 +18,7 @@ func _enter_tree() -> void:
 	SignalHub.on_create_explosion.connect(on_create_explosion)
 	SignalHub.on_create_powerup.connect(on_create_powerup)
 	SignalHub.on_create_bullet.connect(on_create_bullet)
-	
+	SignalHub.on_create_homing_missile.connect(on_create_homing_missile)
 
 func add_object(obj: Node, pos: Vector2) -> void:
 	add_child(obj)
@@ -35,6 +36,10 @@ func on_create_powerup(pos: Vector2, type: PowerUp.PowerUpType) -> void:
 	
 func on_create_bullet(pos: Vector2,  dir: Vector2,type: Bullet.BulletType, speed: float) -> void:
 	var bullet: Bullet = BULLET_SCENES[type].instantiate()
-	bullet.setup(dir, speed)
+	bullet.setup(dir, speed, type)
 	call_deferred("add_object", bullet, pos)
+
+func on_create_homing_missile(pos: Vector2) -> void:
+	var missile = HOMING_MISSILE.instantiate()
+	call_deferred("add_object", missile, pos)
 	

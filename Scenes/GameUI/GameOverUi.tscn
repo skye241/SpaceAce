@@ -1,0 +1,63 @@
+[gd_scene load_steps=5 format=3 uid="uid://c25458fu51c7l"]
+
+[ext_resource type="Script" uid="uid://ci6sgg886xsvk" path="res://Scenes/GameUI/GameOverUi.gd" id="1_8qhwr"]
+[ext_resource type="LabelSettings" uid="uid://c6b4s163m44dj" path="res://Scenes/UiButton/Title322.tres" id="2_8qhwr"]
+[ext_resource type="FontFile" uid="uid://b33msg5mojbvg" path="res://assets/fonts/LuckiestGuy-Regular.ttf" id="2_cqs0c"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_w42q7"]
+font = ExtResource("2_cqs0c")
+font_size = 96
+outline_size = 4
+outline_color = Color(0.926457, 0.199721, 0.213961, 1)
+shadow_size = 10
+shadow_color = Color(0.807843, 0.180392, 0.215686, 0.862745)
+shadow_offset = Vector2(2, 2)
+
+[node name="GameOverUI" type="Control"]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_8qhwr")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.223529, 0.0784314, 0.72549, 0.65098)
+
+[node name="VB" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -46.0
+offset_top = -20.0
+offset_right = 46.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="VB"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "GAME OVER"
+label_settings = SubResource("LabelSettings_w42q7")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ScoreLabel" type="Label" parent="VB"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 4
+text = "ELLOOTYTYTYTYTY"
+label_settings = ExtResource("2_8qhwr")
+horizontal_alignment = 1
